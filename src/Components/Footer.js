@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <>
-    <div name="contact" className='bg-[#F0F8FF] flex flex-row justify-around items-center mt-5 p-6 '>
+    <div name="contact" className='bg-[#F0F8FF] flex md:flex-row flex-col justify-around items-center mt-5 p-6 '>
         <div className='mt-5'>
             <div className=' h-fit w-56'><img  src={logo} alt="" /></div>
             <div className='flex ml-7 w-fit mt-2'>
@@ -42,12 +42,12 @@ function Footer() {
         </div>
 
         <div className='mt-16'>
-            <h2 className='text-xl font-bold mb-1.5'>Company</h2>
+            <h2 className='text-xl font-bold mb-[0.95rem]'>Company</h2>
             <ul className='list-none'>
-            <li className='mx-4 text-lg  cursor-pointer '><Link to='home' smooth duration={800}>HOME</Link></li>
-                <li className='mx-4 text-lg cursor-pointer '><Link to='about' smooth duration={800}>About</Link></li>
-                <li className='mx-4 text-lg cursor-pointer '><Link to='internship' smooth duration={800}>Internship</Link></li>
-                <li className='mx-4 text-lg cursor-pointer ' ><Link to='contact' smooth duration={800}>Contact</Link></li>
+            <li className='md:mx-4 mr-5 md:mr-0 text-lg text-center cursor-pointer '><Link to='home' smooth duration={800}>HOME</Link></li>
+            <li className='md:mx-4 mr-5 md:mr-0 text-lg text-center cursor-pointer '><Link to='about' smooth duration={800}>About</Link></li>
+            <li className='md:mx-4 mr-5 md:mr-0 text-lg text-center cursor-pointer '><Link to='internship' smooth duration={800}>Internship</Link></li>
+            <li className='md:mx-4  mr-5 md:mr-0 text-lg  text-center cursor-pointer ' ><Link to='contact' smooth duration={800}>Contact</Link></li>
 
 
             </ul>
@@ -55,18 +55,18 @@ function Footer() {
         </div>
 
         <div className='mt-12'>
-            <h2 className='text-xl font-bold mb-1.5'>Resources</h2>
+            <h2 className='text-xl font-bold mr-4  md:mr-0 mb-[0.95rem]'>Resources</h2>
             <ul className='list-none'>
-            <li className='mx-2 text-lg  cursor-pointer '>Discord Server</li>
-                <li className='mx-2 text-lg cursor-pointer '>Blog</li>
-                <li className='mx-2 text-lg cursor-pointer '>Podcast</li>
+            <li className='md:mx-2 mr-7 md:mr-0 text-lg text-center cursor-pointer '>Discord </li>
+                <li className='md:mx-2 mr-7 md:mr-0 text-lg text-center cursor-pointer'>Blog</li>
+                <li className='md:mx-2 mr-7 md:mr-0 text-lg text-center cursor-pointer '>Podcast</li>
 
 
 
             </ul>
 
         </div>
-        <div className="flex flex-col items-center justify-center p-4 bg-blue-100 rounded-lg shadow mt-5">
+        <div className="flex flex-col items-center justify-center p-4 bg-blue-100 rounded-lg shadow md:mt-5 mt-8">
       <h2 className="text-lg font-semibold text-gray-700 mb-4">Get Updates About Internships</h2>
       <form className="flex w-full max-w-sm space-x-3" onSubmit={handleSubmit}>
         <div className="relative flex-grow">

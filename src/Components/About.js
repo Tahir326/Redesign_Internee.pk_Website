@@ -157,8 +157,8 @@ import founder2 from '../assets/founder2.jpg';
 // Individual card component for the team members
 const TeamMemberCard = ({ name, role, imageUrl }) => {
     const imageClasses = imageUrl === founder1
-    ? "rounded-bl-lg rounded-tl-lg"  // Founder 1 image classes
-    : "rounded-br-lg rounded-tr-lg"; // Founder 2 image classes
+    ? "md:rounded-bl-lg md:rounded-tl-lg rounded-t-lg"  // Founder 1 image classes
+    : "md:rounded-br-lg md:rounded-tr-lg rounded-b-lg"; // Founder 2 image classes
   return (
     <>
     <div className="flex flex-col items-center = rounded-lg shadow-xl mt-4 relative  ">
@@ -182,8 +182,8 @@ const TeamMemberCard = ({ name, role, imageUrl }) => {
 // Main component for the section
 const InternshipSection = () => {
   return (
-    <div name="about" className="flex justify-between w-[1400px] mt-14 ml-[4%]  ">
-     <div className='w-[650px] h-[650px]'>
+    <div  className="md:flex md:flex-row md:justify-between w-[1400px]  md:mt-14 -mt-36 ml-[4.35%] flex flex-col  ">
+     <div  className='md:w-[650px] md:h-[650px] w-[335px] -ml-[0.15rem] md:mx-3'>
         <TeamMemberCard 
           name="Hammad Sheikh" 
           role="Founder" 
@@ -191,9 +191,9 @@ const InternshipSection = () => {
     
         />
      
-     </div>
+     </div >
 
-      <div className=" bg-[#b3bae1] text-white p-16 mx-4  mt-4  shadow-xl w-[100%]">
+      <div name="about" className=" bg-[#b3bae1] text-white md:p-16 p-8 md:mx-4 mx-2 -ml-[0.05rem]  mt-4  shadow-xl md:w-[100%] w-[335px]">
         <div className='text-center mt-16'>
           <p className="text-[2.75rem] text-[#28395A]  font-bold ">Welcome to Internee.pk</p>
           <p className="mt-4 text-justify text-[#28395A] text-[1.15rem] ">
@@ -208,7 +208,7 @@ const InternshipSection = () => {
 
       </div>
       
-    <div className='w-[650px] h-[650px]'>
+    <div className='md:w-[650px] md:h-[650px] w-[335px] -ml-[0.15rem] md:mx-3'>
         <TeamMemberCard 
           name="Rayyan  Zain" 
           role="CMO" 

@@ -102,9 +102,9 @@ function Internship() {
   return (
     <>
     
-   <div name="internship" className='mt-32 ml-[4%]'>
-    <h1 className='text-5xl font-bold '>Recent Internships</h1>
-    <p className='mt-4  text-lg text-[#8E9DBB] font-semibold'><span className='text-[#484338] font-bold'>Internships came after every two months</span> .Grab your internships on your<br/> favourite domain to boost up yourself in the field of Computer technology</p>
+   <div name="internship" className='md:mt-32 mt-24 ml-[4%] w-fit'>
+    <h1 className='text-5xl ml-[2.25%] md:ml-0 font-bold '>Recent Internships</h1>
+    <p className='mt-4 ml-[2.75%] md:ml-0 md:text-lg text-base text-[#8E9DBB] font-semibold'><span className='text-[#484338] font-bold'>Internships came after every two months. </span> <br />Grab your internships on your favourite domain to boost up yourself <br className='md:block hidden' /> in the field of Computer technology</p>
    </div>
 
    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4  ml-[1.75%]">
